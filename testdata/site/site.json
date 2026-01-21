@@ -1,0 +1,45 @@
+{
+  "name": "My Site",
+  "baseURL": "https://example.com",
+  "title": "My Awesome Site",
+  "description": "A site built with Canopy",
+  "language": "en",
+
+  "contentDir": "content",
+  "templateDir": "templates",
+  "staticDir": "static",
+  "outputDir": "public",
+
+  "buildDrafts": false,
+
+  "permalinks": {
+    "blog": "/blog/:slug/",
+    "guides": "/guides/:slug/"
+  },
+
+  "nav": [
+    { "title": "Home", "url": "/", "weight": 1 },
+    { "title": "Blog", "url": "/blog/", "weight": 2 },
+    { "title": "Guides", "url": "/guides/", "weight": 3 }
+  ],
+
+  "sections": {
+    "blog": {
+      "required": ["title", "date"],
+      "defaults": {
+        "draft": false
+      }
+    },
+    "guides": {
+      "required": ["title"],
+      "defaults": {
+        "draft": false
+      }
+    }
+  },
+
+  "params": {
+    "author": "Your Name",
+    "github": "https://github.com/yourname"
+  }
+}
