@@ -93,6 +93,10 @@ func (e *Engine) load() error {
 		}
 	}
 
+	if err := e.loadDefaultShortcodes(); err != nil {
+		return err
+	}
+
 	return nil
 }
 
