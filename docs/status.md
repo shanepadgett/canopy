@@ -10,8 +10,10 @@
 - Static asset copying into `public/`.
 - Tag pages (`/tags/<tag>/`) and tags index (`/tags/`).
 - Machine-readable outputs: `rss.xml`, `sitemap.xml`, `robots.txt`.
+- Search index (`search.json`) and nav-integrated search UI.
 - Sample site nav updated with Tags link.
 
 ## Next Up
 
-- Search index (`search.json`) and minimal search UI.
+- Serve command (local dev server).
+- Shortcodes.
